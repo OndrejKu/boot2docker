@@ -35,4 +35,4 @@ xorriso -as mkisofs \
     -l -J -R -V boot2docker -no-emul-boot -boot-load-size 4 -boot-info-table \
     -b boot/isolinux/isolinux.bin -c boot/isolinux/boot.cat \
     -isohybrid-mbr /usr/lib/syslinux/isohdpfx.bin \
-    -o /boot2docker.iso /tmp/iso
+    -no-pad -o /boot2docker.iso /tmp/iso
